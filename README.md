@@ -8,7 +8,7 @@ These are some methods, flawed but interesting, I have created while looking at 
 
   [Link to code](https://github.com/charkitch/Absurd-Ruby/blob/master/examples/closure_sealed_stack.rb)
 
-  The method that started this whole repository!  Untouchable stack generator is a method for securing a stack implemented as
+  The method that started this whole repository! Untouchable stack generator is a method for securing a stack implemented as
   an array from all but the most determined meddlers. Calling the method generates a storage array for elements and an api for
   treating that array as a stack while making accessing the underlying array in violation of stack principles difficult enough
   that it could only be done intentionally. If interested in how to still access the underlying array please [see below](#how_to_break_it) 
@@ -52,7 +52,7 @@ These are some methods, flawed but interesting, I have created while looking at 
   Still want to mess with the underlying array though? Here is how! 
   
   ```
-  [34] pry(main)> context  = new_stack[:add].binding
+  [34] pry(main)> context = new_stack[:add].binding
 => #<Binding:0x007f875cc21df8>
 [35] pry(main)> context.local_variables
 => [:stack, :add, :remove, :peek]
