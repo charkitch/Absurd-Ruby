@@ -8,13 +8,12 @@ These are some methods, flawed but interesting, I have created while looking at 
 
   [Link to code](https://github.com/charkitch/Absurd-Ruby/blob/master/examples/closure_sealed_stack.rb)
 
-  The method that started this whole repository!  Untouchable stack generator is a method for securing 
-  your stack in the face of all the would be meddelsome programmers who are not following best practice. 
+  The method that started this whole repository!  Untouchable stack generator is a method for securing a stack implemented as   an array from all but the most determined meddlers. The method generates a storage array for elements an api for treating     that array as a stack while making accessing the stack through regular array features difficult enough that it could only be   done intentionally. 
   
-  The method creates an array and then returns a hash of three keys. The key of add points to a lambda that pushes 
-  the argument passed into a stack. The key of remove points to a lambda that pops the last element off of the stack 
-  and return that element. The key of peek points to a lambda that returns the the most recently removed element in the
-  array or nil if it is empty. 
+  
+  The method creates an array and then returns a hash of three key-value pairs. The key of add points to a lambda that pushes 
+  the argument passed to it when called into the array created when the stack generator is called. The key of remove points to   a lambda that pops the last element off of the stack and return that element. The key of peek points to a lambda that       
+  returns the the most recently added element in the array or nil if it is empty. 
   
   An example of invocation is below with a useful error on line 8. 
   
