@@ -31,7 +31,7 @@ These are some methods, flawed but interesting, I have created while looking at 
 => true
 [6] pry(main)> new_stack[:add].(10)
 => true
-[7] pry(main)> new_stack[:peek].() # .() is an alternative o .call
+[7] pry(main)> new_stack[:peek].() # .() is an alternative to .call
 => 10
 [8] pry(main)> new_stack[:remove] #An easy error to make in Ruby, unlike with regular methods there is a differene between referencing the function and invoking it. 
 => #<Proc:0x007f97149f9360@(pry):27 (lambda)>
