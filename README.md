@@ -39,3 +39,4 @@ These are some methods, flawed but interesting, I have created while looking at 
 [12] pry(main)> new_stack[:peek].()
 => nil
   ```
+  This method does make interfering with the stacks array implementation impossible by regular means but creates memory issues   and ignores the benifits of OOP inheritence. It was however very fun to create. 
