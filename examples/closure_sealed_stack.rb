@@ -16,5 +16,9 @@ def untouchable_stack_generator
     element
   end  
   
-  return { add: add, remove: remove, peek: peek }
+  return { 
+    add: add, 
+    remove: remove, 
+    peek: peek, 
+    }
 end  
