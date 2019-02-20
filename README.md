@@ -11,7 +11,7 @@ These are some methods, flawed but interesting, I have created while looking at 
   The method that started this whole repository!  Untouchable stack generator is a method for securing a stack implemented as
   an array from all but the most determined meddlers. Calling the method generates a storage array for elements and an api for
   treating that array as a stack while making accessing the underlying array in violation of stack principles difficult enough
-  that it could only be done intentionally. If interested in how to still access the underlying array please [see below](how_to_break_it) 
+  that it could only be done intentionally. If interested in how to still access the underlying array please [see below](#how_to_break_it) 
   
   The method creates an array and then returns a hash of three key-value pairs. The key of add points to a lambda that pushes 
   the argument passed to the lambda when it is called into the array created when the stack generator is called. The key of
