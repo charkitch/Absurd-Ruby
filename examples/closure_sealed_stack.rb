@@ -16,7 +16,7 @@ def untouchable_stack_generator
     element
   end
 
-  empty = -> do
+  empty = -> () do
     stack.empty?
   end
   
