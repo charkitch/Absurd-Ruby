@@ -13,10 +13,11 @@ These are some methods, flawed but interesting, I have created while looking at 
   treating that array as a stack while making accessing the underlying array in violation of stack principles difficult enough
   that it could only be done intentionally. If interested in how to still access the underlying array please [see below](#how_to_break_it) 
   
-  The method creates an array and then returns a hash of three key-value pairs. The key of add points to a lambda that pushes 
+  The method creates an array and then returns a hash of four key-value pairs. The key of add points to a lambda that pushes 
   the argument passed to the lambda when it is called into the array created when the stack generator is called. The key of
   remove points to a lambda that pops the last element off of the stack and return that element. The key of peek points to a
-  lambda that returns the most recently added element in the array or nil if the array is empty. 
+  lambda that returns the most recently added element in the array. The key of empty returns a boolean indicating if the stack
+  is empty. 
   
   An example of invocation is below with a useful error on line 8. 
   
