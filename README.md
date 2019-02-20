@@ -48,7 +48,7 @@ These are some methods, flawed but interesting, I have created while looking at 
   create.
   
   
-  ### <a name="break_it"></a> How to still access the array and break this whole thing. 
+  ### <a name="how_to_break_it"></a> How to still access the array and break this whole thing. 
   Still want to mess with the underlying array though? Here is how! 
   
   ```
