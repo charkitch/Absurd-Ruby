@@ -2,7 +2,7 @@
 Some wacky things done in Ruby for educational purposes. 
 
 
-These are some methods, flawed but interesting, I have created while looking at Ruby's functional programming capabalities. 
+These are some methods, flawed but interesting, I have created while looking at Ruby's functional programming capabilities. 
 
 ### Untouchable Stack Generator.
 
