@@ -42,3 +42,18 @@ These are some methods, flawed but interesting, I have created while looking at 
 => nil
   ```
   This method does make interfering with the stacks array implementation impossible by regular means but creates memory issues   and ignores the benifits of OOP inheritence. It was however very fun to create. 
+  
+  Still want to mess with the stack though? Here is how! 
+  
+  ```
+  [34] pry(main)> context  = new_stack[:add].binding
+=> #<Binding:0x007f875cc21df8>
+[35] pry(main)> context.local_variables
+=> [:stack, :add, :remove, :peek]
+[36] pry(main)> grabbed_stack = context.local_variable_get(:stack)
+=> [3, 2, 1, 0]
+[37] pry(main)> grabbed_stack.push('Not that unreachable, is it?')
+=> [3, 2, 1, 0, "Not that unreachable, is it?"]
+[38] pry(main)> new_stack[:peek].()
+=> "Not that unreachable, is it?"
+```
