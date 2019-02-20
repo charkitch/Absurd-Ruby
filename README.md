@@ -4,7 +4,8 @@ Some wacky things done in Ruby for educational purposes.
 
 These are some methods, flawed but interesting, I have created while looking at Ruby's functional programming capabalities. 
 
-###Untouchable Stack Generator.
+### Untouchable Stack Generator.
+
   The method that started this whole repository!  Untouchable stack generator is a method for securing 
   your stack in the face of all the would be meddelsome programmers who are not following best practice. 
   
