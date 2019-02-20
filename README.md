@@ -6,6 +6,8 @@ These are some methods, flawed but interesting, I have created while looking at 
 
 ### Untouchable Stack Generator.
 
+  [Link to code](https://github.com/charkitch/Absurd-Ruby/blob/master/examples/closure_sealed_stack.rb)
+
   The method that started this whole repository!  Untouchable stack generator is a method for securing 
   your stack in the face of all the would be meddelsome programmers who are not following best practice. 
   
